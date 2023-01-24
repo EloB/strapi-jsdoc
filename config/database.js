@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = ({ env }) => ({
+module.exports = /** @satisfies {Strapi.ConfigDatabase} */ (({ env }) => ({
   connection: {
     client: 'sqlite',
     connection: {
@@ -8,4 +8,4 @@ module.exports = ({ env }) => ({
     },
     useNullAsDefault: true,
   },
-});
+}));

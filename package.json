@@ -9,11 +9,14 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/koa2-ratelimit": "^0.9.3",
+    "@types/node-schedule": "^2.1.0"
+  },
   "dependencies": {
-    "@strapi/strapi": "4.5.6",
-    "@strapi/plugin-users-permissions": "4.5.6",
     "@strapi/plugin-i18n": "4.5.6",
+    "@strapi/plugin-users-permissions": "4.5.6",
+    "@strapi/strapi": "4.5.6",
     "better-sqlite3": "7.4.6"
   },
   "author": {
